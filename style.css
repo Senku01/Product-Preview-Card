@@ -1,0 +1,96 @@
+.parent{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(158, 36%, 37%) ;
+}
+
+.card{
+    display: inherit;
+    height: 50vh;
+    width: 65vh;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:480px) {
+        display:flex;
+        flex-direction:column;
+        
+    }
+}
+.card-image{
+    display: inherit;
+    height: inherit;
+    width: inherit;
+    border-radius: 10px;
+}
+img{
+   border-radius: 5%;
+   object-fit: cover;
+   height: 50vh;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+}
+button{
+    border-radius: 5%;
+}
+
+.card-info{
+    display: inherit;
+    height: inherit;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* gap: 45px; */
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.card-title{
+    display: inherit;
+    margin: 25px;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color:gray;
+}
+.card-name{
+    display: inherit;
+    margin: 20px;
+    width:10em;
+    font-weight: 700;
+    padding: 5px;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+.card-desc{
+    display: inherit;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.card-price{
+    color: green;
+    display: inherit;
+    margin: 20px;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card-button{
+    display: inherit;
+    /* height: inherit; */
+    /* width: inherit; */
+    justify-content: center;
+    /* align-items: center; */
+    /* margin: 20px; */
+    /* flex-grow:1 1 200px; */
+}
+.my-button{
+    background-color: hsl(120, 42%, 35%);
+    height: 5vh;
+    width: 25vh;
+    border-radius: 10px;
+}
